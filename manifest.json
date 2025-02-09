@@ -7,14 +7,10 @@
     "default_popup": "hello.html",
     "default_icon": "hello_extensions.png"
   },
-  "background": {
-    "service_worker": "service-worker.js",
-    "type": "module"
-  },
   "content_scripts": [
     {
       "js": ["content_scripts.js"],
-      "matches": ["https://www.youtube.com/*"]
+      "matches": ["https://www.youtube.com/*", "https://www.youtube.com/"]
     }
   ],
   "host_permissions": ["https://www.youtube.com/*"]
